@@ -19,8 +19,8 @@ import javax.servlet.http.HttpServletResponse;
 		    PrintWriter out = response.getWriter();  
 		      
 		    ServletConfig config=getServletConfig();  
-		    String driver=config.getInitParameter("name");  
-		    out.print("Name is: "+driver);  
+		    String name=config.getInitParameter("name");  
+		    out.print("Name is: "+name);  
 		          
 		    out.close();  
 		    }  

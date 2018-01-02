@@ -13,7 +13,7 @@ public class ServletDemo extends HttpServlet {
         response.setContentType("text/html");  
         PrintWriter out = response.getWriter();  
       
-        out.print("<br>welcome to servlet<br>");  
+        out.print("<br>welcome to servlet which is called from filter<br>");  
           
     }  
   

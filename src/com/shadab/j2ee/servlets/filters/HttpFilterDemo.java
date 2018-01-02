@@ -13,11 +13,11 @@ public void doFilter(ServletRequest req, ServletResponse resp,
     FilterChain chain) throws IOException, ServletException {  
           
     PrintWriter out=resp.getWriter();  
-    out.print("filter is invoked before");  
+    out.print("filter is invoked");  
           
     chain.doFilter(req, resp);//sends request to next resource  
           
-    out.print("filter is invoked after");  
+    out.print("filter completed");  
     }  
     public void destroy() {}  
 }  

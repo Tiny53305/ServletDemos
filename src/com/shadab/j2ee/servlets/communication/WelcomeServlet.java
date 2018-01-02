@@ -13,7 +13,8 @@ public class WelcomeServlet extends HttpServlet {
     PrintWriter out = response.getWriter();  
           
     String n=request.getParameter("userName");  
-    out.print("Welcome "+n);  
+    String city= (String)request.getAttribute("city");
+    out.print("Welcome "+n+" in city "+city);  
     }  
   
 }  

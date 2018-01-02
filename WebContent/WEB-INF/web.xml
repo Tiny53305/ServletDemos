@@ -146,22 +146,22 @@
 
 <!-- filter  -->
 <servlet>  
-<servlet-name>filterdemo</servlet-name>  
+<servlet-name>filterservletdemo</servlet-name>  
 <servlet-class>com.shadab.j2ee.servlets.filters.ServletDemo</servlet-class>  
 </servlet>  
   
 <servlet-mapping>  
-<servlet-name>filterdemo</servlet-name>  
+<servlet-name>filterservletdemo</servlet-name>  
 <url-pattern>/filterdemo</url-pattern>  
 </servlet-mapping>  
   
 <filter>  
-<filter-name>filterdemo</filter-name>  
+<filter-name>filterclass</filter-name>  
 <filter-class>com.shadab.j2ee.servlets.filters.HttpFilterDemo</filter-class>  
 </filter>  
    
 <filter-mapping>  
-<filter-name>filterdemo</filter-name>  
+<filter-name>filterclass</filter-name>  
 <url-pattern>/filterdemo</url-pattern>  
 </filter-mapping>  
   

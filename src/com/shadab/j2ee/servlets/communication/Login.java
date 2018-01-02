@@ -18,6 +18,7 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)
           
     if(p.equals("sh12")){  
         RequestDispatcher rd=request.getRequestDispatcher("welcome");  
+        request.setAttribute("city", "chennai");
         rd.forward(request, response);  
     }  
     else{  

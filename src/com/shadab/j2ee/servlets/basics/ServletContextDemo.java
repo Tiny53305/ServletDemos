@@ -9,15 +9,15 @@ public void doGet(HttpServletRequest req,HttpServletResponse res)
 throws ServletException,IOException  
 {  
 res.setContentType("text/html");  
-PrintWriter pw=res.getWriter();  
+PrintWriter out=res.getWriter();  
   
 //creating ServletContext object  
 ServletContext context=getServletContext();  
   
 //Getting the value of the initialization parameter and printing it  
 String country=context.getInitParameter("country");  
-pw.println("country is: "+country);  
+out.println("country is: "+country);  
   
-pw.close();  
+out.close();  
   
 }}  
